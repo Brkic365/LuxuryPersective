@@ -44,10 +44,8 @@ export default function Home() {
       <div className={styles.about}>
         <div className={styles.text}>
           <h2>LOOKING FOR A DREAM HOUSE OR APARTMENT?</h2>
-          <p>
-            Here at Luxury Perspective, we offer only the best to our clients.
-            It doesn't matter if you are looking for a new house or a new
-            apartment, you can believe us that we will fulfill your needs.
+          <p>{"
+            Here at Luxury Perspective, we offer only the best to our clients. It doesn't matter if you are looking for a new house or a new apartment, you can believe us that we will fulfill your needs."}
           </p>
           <button className={styles.full}>SEE MORE</button>
         </div>

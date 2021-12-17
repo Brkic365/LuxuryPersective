@@ -5,7 +5,7 @@ import styles from "../../styles/Properties.module.scss";
 
 import Listing from "../../Components/Listing";
 
-function properties() {
+function Properties() {
   const [email, setEmail] = useState(null);
 
   const listings = [
@@ -101,4 +101,4 @@ function properties() {
   );
 }
 
-export default properties;
+export default Properties;
