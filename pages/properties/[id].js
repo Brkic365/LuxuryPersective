@@ -17,7 +17,11 @@ function Property() {
       {/* Main Section */}
 
       <div className={styles.main}>
-        <img className={styles.bg} src="/images/villa_pool_2.jpg" />
+        <img
+          className={styles.bg}
+          src="/images/villa_pool_2.jpg"
+          alt="Image of the property"
+        />
 
         <div className={styles.mainTitle}>
           <h1>12345 STREET</h1>
@@ -64,7 +68,7 @@ function Property() {
             non tellus orci.
           </p>
         </div>
-        <img src="/images/villa_pool_2.jpg" />
+        <img src="/images/villa_pool_2.jpg" alt="Image of the property" />
       </div>
 
       {/* Carousel Section */}

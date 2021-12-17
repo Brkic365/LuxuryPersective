@@ -10,13 +10,13 @@ function Carousel() {
     <div className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
         <div className={styles.embla__slide}>
-          <img src="/images/villa_pool_2.jpg" />
+          <img src="/images/villa_pool_2.jpg" alt="Carousel image 1" />
         </div>
         <div className={styles.embla__slide}>
-          <img src="/images/villa_pool_2.jpg" />
+          <img src="/images/villa_pool_2.jpg" alt="Carousel image 2" />
         </div>
         <div className={styles.embla__slide}>
-          <img src="/images/villa_pool_2.jpg" />
+          <img src="/images/villa_pool_2.jpg" alt="Carousel image 3" />
         </div>
       </div>
     </div>

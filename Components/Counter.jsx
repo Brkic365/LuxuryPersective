@@ -9,7 +9,7 @@ export default function Counter({ imgUrl, number, prefix, suffix, text }) {
 
   return (
     <div className={styles.counter}>
-      <img src={imgUrl} />
+      <img src={imgUrl} alt="Counter graphic" />
       <CountUp
         end={number}
         duration={1}

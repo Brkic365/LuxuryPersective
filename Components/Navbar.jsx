@@ -13,11 +13,19 @@ function Navbar() {
     <div className={styles.nav}>
       <div className={styles.left}>
         <Link href="/">
-          <img className={styles.logo} src="/svg/nav_logo.svg" />
+          <img
+            className={styles.logo}
+            src="/svg/nav_logo.svg"
+            alt="Website logo"
+          />
         </Link>
       </div>
       <div className={styles.right}>
-        <img className={styles.menu} src="/svg/menu.svg" />
+        <img
+          className={styles.menu}
+          src="/svg/menu.svg"
+          alt="Mobile Menu Icon"
+        />
         <div className={styles.links}>
           <Link href="/">
             <a className={router.pathname === "/" && styles.open}>HOME</a>

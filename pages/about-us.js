@@ -25,7 +25,7 @@ function aboutUs() {
 
       {/* Our Start Section */}
       <div className={styles.start}>
-        <img src="/images/inside_stairs.jpg" />
+        <img src="/images/inside_stairs.jpg" alt="Image of stairs" />
         <div className={styles.text}>
           <h2>OUR START</h2>
           <p>
@@ -59,7 +59,7 @@ function aboutUs() {
             non tellus orci.
           </p>
         </div>
-        <img src="/images/inside_kitchen.jpg" />
+        <img src="/images/inside_kitchen.jpg" alt="Image of a kitchen" />
       </div>
     </div>
   );

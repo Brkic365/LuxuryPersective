@@ -5,7 +5,7 @@ function Listing({ listing }) {
   return (
     <div className={styles.listing}>
       <div className={styles.gradient}>
-        <img src={listing.imgUrl} />
+        <img src={listing.imgUrl} alt="Photo of the property" />
       </div>
       <div className={styles.text}>
         <h4>{listing.street}</h4>

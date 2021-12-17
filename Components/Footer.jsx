@@ -14,23 +14,23 @@ function Footer() {
 
       <div className={styles.contactMethods}>
         <div className={styles.method}>
-          <img src="/svg/contact/call.svg" />
+          <img src="/svg/contact/call.svg" alt="Phone icon" />
           <p>+1 123 456 7890</p>
         </div>
         <div className={styles.method}>
-          <img src="/svg/contact/email.svg" />
+          <img src="/svg/contact/email.svg" alt="Email icon" />
           <p>info@luxuryperspective.com</p>
         </div>
         <div className={styles.method}>
-          <img src="/svg/contact/location.svg" />
+          <img src="/svg/contact/location.svg" alt="Location icon" />
           <p>New York</p>
         </div>
       </div>
 
       <div className={styles.socials}>
-        <img src="/svg/socials/instagram.svg" />
-        <img src="/svg/socials/facebook.svg" />
-        <img src="/svg/socials/youtube.svg" />
+        <img src="/svg/socials/instagram.svg" alt="Instagram icon" />
+        <img src="/svg/socials/facebook.svg" alt="Facebook icon" />
+        <img src="/svg/socials/youtube.svg" alt="YouTube icon" />
       </div>
 
       <p className={styles.cc}>
