@@ -1,0 +1,168 @@
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0.5rem;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    color: #ceb068;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -1rem;
+      height: 2px;
+      width: 60%;
+      border-bottom: 2px solid #ceb068;
+    }
+  }
+
+  .links,
+  .contactMethods,
+  .socials {
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    width: 80%;
+    color: #eeeeee;
+    margin: 0.5rem 0;
+
+    h4 {
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+
+  .contactMethods {
+    width: 100%;
+
+    .method {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 1rem;
+      }
+
+      p {
+        margin-left: 0.2rem;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .socials {
+    width: 30%;
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .cc {
+    position: absolute;
+    bottom: 0.4rem;
+    font-size: 0.7rem;
+    color: #eeeeee;
+    opacity: 0.5;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .footer {
+    .links,
+    .contactMethods,
+    .socials {
+      width: 60%;
+    }
+
+    .contactMethods {
+      width: 70%;
+
+      .method p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .socials {
+      width: 20%;
+
+      img {
+        width: 25%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .footer {
+    .links,
+    .contactMethods,
+    .socials {
+      width: 40%;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+    }
+
+    .contactMethods {
+      width: 50%;
+
+      .method p {
+        font-size: 1rem;
+      }
+    }
+
+    .socials {
+      width: 15%;
+
+      img {
+        width: 25%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .footer {
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .links,
+    .contactMethods,
+    .socials {
+      width: 30rem;
+    }
+
+    .contactMethods {
+      width: 50rem;
+
+      .method {
+        p {
+          font-size: 1.2rem;
+          margin-left: 1rem;
+        }
+
+        img {
+          width: 2rem;
+        }
+      }
+    }
+
+    .socials {
+      width: 10rem;
+
+      img {
+        width: 2.2rem;
+      }
+    }
+  }
+}

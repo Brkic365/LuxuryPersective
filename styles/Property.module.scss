@@ -1,0 +1,293 @@
+$main-light: #eeeeee;
+$main-gold: #ceb068;
+
+.property {
+  .main {
+    height: 50vh;
+
+    .bg {
+      position: absolute;
+      top: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 50vh;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.4;
+    }
+
+    .mainTitle {
+      width: fit-content;
+      margin: 0 auto;
+      padding-top: 10rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      color: $main-light;
+      text-align: left;
+
+      h1 {
+        font-size: 2.2rem;
+        margin: 0;
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .numbers {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .top,
+    .bottom {
+      display: flex;
+      align-items: center;
+      place-content: space-between;
+      width: 100%;
+      margin: 0.3rem 0;
+
+      .number {
+        display: flex;
+        align-items: center;
+
+        h3 {
+          font-size: 1.7rem;
+          color: $main-gold;
+        }
+
+        p {
+          margin-left: 0.5rem;
+          color: $main-light;
+        }
+      }
+    }
+  }
+
+  .about {
+    img {
+      display: none;
+    }
+
+    .text {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      padding: 1rem;
+
+      h2 {
+        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+        color: $main-gold;
+        position: relative;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -1rem;
+          height: 2px;
+          width: 60%;
+          border-bottom: 2px solid $main-gold;
+        }
+      }
+
+      p {
+        color: $main-light;
+      }
+    }
+  }
+
+  .map {
+    height: 200px;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .property {
+    .main {
+      .mainTitle {
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+    }
+
+    .about {
+      padding: 2rem 5rem;
+
+      .text {
+        p {
+          width: 90%;
+        }
+      }
+    }
+
+    .map {
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .property {
+    .numbers {
+      flex-direction: row;
+      place-content: space-between;
+
+      .top,
+      .bottom {
+        place-content: space-evenly;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .property {
+    .main {
+      .mainTitle {
+        h1 {
+          font-size: 2.4rem;
+        }
+      }
+    }
+
+    .about {
+      display: flex;
+      align-items: start;
+
+      .text {
+        padding-top: 0;
+        text-align: left;
+        padding-left: 2rem;
+
+        h2 {
+          text-align: left;
+          margin-right: auto;
+          font-size: 2rem;
+
+          &:before {
+            left: 0;
+            transform: translateX(0%);
+          }
+        }
+
+        p {
+          margin-right: auto;
+          font-size: 1.2rem;
+        }
+      }
+
+      img {
+        display: block;
+        width: 40%;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .property {
+    .main {
+      .mainTitle {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+    }
+
+    .about {
+      .text {
+        padding-top: 0;
+        text-align: left;
+        padding-left: 2rem;
+
+        h2 {
+          font-size: 2.2rem;
+        }
+
+        p {
+          margin-top: 1.5rem;
+          font-size: 1.3rem;
+        }
+      }
+
+      img {
+        width: 20rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .property {
+    .numbers {
+      padding: 2rem 20rem;
+    }
+
+    .main {
+      .mainTitle {
+        h1 {
+          font-size: 5.5rem;
+        }
+
+        h3 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .about {
+      padding: 2rem 10rem;
+
+      .text {
+        h2 {
+          font-size: 2.4rem;
+        }
+      }
+
+      img {
+        width: 30rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .property {
+    .main {
+      .mainTitle {
+        h1 {
+          font-size: 6rem;
+        }
+      }
+    }
+
+    .about {
+      padding: 2rem 15rem;
+
+      .text {
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .map {
+      height: 500px;
+    }
+  }
+}

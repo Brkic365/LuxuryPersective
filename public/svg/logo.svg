@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="159.127" height="139.223" viewBox="0 0 159.127 139.223">
+  <g id="Logo" transform="translate(-878.756 -187.606)">
+    <g id="Polygon_1" data-name="Polygon 1" transform="translate(1036.628 322) rotate(180)" fill="none">
+      <path d="M78.314,0l78.314,102H0Z" stroke="none"/>
+      <path d="M 78.31378173828125 9.852394104003906 L 12.17117309570313 96 L 144.4563903808594 96 L 78.31378173828125 9.852394104003906 M 78.31378173828125 0 L 156.6275787353516 102 L -1.52587890625e-05 102 L 78.31378173828125 0 Z" stroke="none" fill="#ceb068"/>
+    </g>
+    <path id="Path_1" data-name="Path 1" d="M882.166,220.643l20.447-29.957h113.693l20.012,30.026" transform="translate(-0.932 -0.08)" fill="none" stroke="#ceb068" stroke-width="6"/>
+    <path id="Path_2" data-name="Path 2" d="M922.07,242.65l54.354,100.32,54.139-100.32" transform="translate(-18.11 -22.449)" fill="none" stroke="#ceb068" stroke-width="6"/>
+    <line id="Line_4" data-name="Line 4" x1="4.556" y1="30.186" transform="translate(899.649 190.5)" fill="none" stroke="#ceb068" stroke-width="6"/>
+    <path id="Path_3" data-name="Path 3" d="M8,30.227,13.183.1" transform="translate(1004.454 190.564)" fill="none" stroke="#ceb068" stroke-width="6"/>
+    <path id="Path_4" data-name="Path 4" d="M922.5,221.318l54.363-29.6,53.912,29.6" transform="translate(-18.295 -0.526)" fill="none" stroke="#ceb068" stroke-width="6"/>
+    <path id="Path_6" data-name="Path 6" d="M914.5,190.784l58.988,29.939,58.761-29.939" transform="translate(-14.851 -0.122)" fill="none" stroke="#ceb068" stroke-width="6"/>
+  </g>
+</svg>

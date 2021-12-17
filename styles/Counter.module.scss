@@ -1,0 +1,62 @@
+.counter {
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0;
+  color: black;
+
+  .count {
+    margin: 1rem 0;
+    h1 {
+      margin: 0;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      font-size: 5.5rem;
+      color: #ceb068;
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+  }
+
+  img {
+    z-index: 2;
+  }
+
+  p {
+    z-index: 2;
+    margin-top: -10%;
+    font-weight: normal;
+    opacity: 0.7;
+    font-size: 1.1rem;
+    width: 40%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .counter {
+    width: 100%;
+
+    .count {
+      h1 {
+        font-size: 7rem;
+      }
+    }
+
+    img {
+      margin-top: 2rem;
+      width: 5rem;
+    }
+
+    p {
+      margin-top: -10%;
+      font-size: 1.4rem;
+    }
+  }
+}

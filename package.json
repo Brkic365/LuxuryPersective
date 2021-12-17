@@ -1,0 +1,25 @@
+{
+  "name": "real_estate_example",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "embla-carousel": "^6.0.2",
+    "embla-carousel-autoplay": "^6.0.2",
+    "embla-carousel-react": "^6.0.2",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-countup": "^6.1.0",
+    "react-dom": "17.0.2",
+    "react-is-visible": "^1.1.2",
+    "sass": "^1.45.0"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  }
+}
