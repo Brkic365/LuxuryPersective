@@ -94,7 +94,9 @@ export default function Contact({ title }) {
         rows="3"
       />
 
-      <button type="submit">Submit</button>
+      <button type="submit" className={styles.empty}>
+        Submit
+      </button>
     </form>
   );
 
