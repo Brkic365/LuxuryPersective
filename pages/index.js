@@ -10,12 +10,11 @@ export default function Home() {
     <div className={styles.home}>
       <Head>
         <title>Luxury Perspective</title>
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+
         <meta
           name="description"
           content="We are Luxury Perspective, a real estate company that sells luxury estates."
         />
-        <meta name="viewport" content="width=device-width, initial-scale_1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
