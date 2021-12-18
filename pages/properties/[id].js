@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Head from "next/head";
 import styles from "../../styles/Property.module.scss";
 
@@ -17,9 +18,12 @@ function Property() {
       {/* Main Section */}
 
       <div className={styles.main}>
+        <Link href="/properties">
+          <img className={styles.back} src="/svg/back.svg" alt="Back icon" />
+        </Link>
         <img
           className={styles.bg}
-          src="/images/villa_pool_2.jpg"
+          src="/images/villa_pool_2.webp"
           alt="Image of the property"
         />
 
@@ -68,7 +72,7 @@ function Property() {
             non tellus orci.
           </p>
         </div>
-        <img src="/images/villa_pool_2.jpg" alt="Image of the property" />
+        <img src="/images/villa_pool_2.webp" alt="Image of the property" />
       </div>
 
       {/* Carousel Section */}
@@ -87,7 +91,7 @@ function Property() {
 
       {/* Enquire Section */}
 
-      <Contact title="ENQUIRE" />
+      <Contact title="ARE YOU INTERESTED?" />
     </div>
   );
 }

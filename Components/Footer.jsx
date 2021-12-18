@@ -6,24 +6,26 @@ function Footer() {
     <div className={styles.footer}>
       <h2>LUXURY PERSPECTIVE</h2>
 
-      <div className={styles.links}>
-        <h4>HOME</h4>
-        <h4>ABOUT US</h4>
-        <h4>PROPERTIES</h4>
-      </div>
+      <div className={styles.blocks}>
+        <div className={styles.links}>
+          <h4>HOME</h4>
+          <h4>ABOUT US</h4>
+          <h4>PROPERTIES</h4>
+        </div>
 
-      <div className={styles.contactMethods}>
-        <div className={styles.method}>
-          <img src="/svg/contact/call.svg" alt="Phone icon" />
-          <p>+1 123 456 7890</p>
-        </div>
-        <div className={styles.method}>
-          <img src="/svg/contact/email.svg" alt="Email icon" />
-          <p>info@luxuryperspective.com</p>
-        </div>
-        <div className={styles.method}>
-          <img src="/svg/contact/location.svg" alt="Location icon" />
-          <p>New York</p>
+        <div className={styles.contactMethods}>
+          <div className={styles.method}>
+            <img src="/svg/contact/call.svg" alt="Phone icon" />
+            <p>+1 123 456 7890</p>
+          </div>
+          <div className={styles.method}>
+            <img src="/svg/contact/email.svg" alt="Email icon" />
+            <p>info@luxuryperspective.com</p>
+          </div>
+          <div className={styles.method}>
+            <img src="/svg/contact/location.svg" alt="Location icon" />
+            <p>New York</p>
+          </div>
         </div>
       </div>
 

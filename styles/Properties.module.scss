@@ -76,7 +76,7 @@ $main-gold: #ceb068;
 
   .subscribe {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url("../public/images/inside_couch.jpg");
+      url("../public/images/inside_couch.webp");
     background-size: cover;
 
     display: flex;
@@ -121,6 +121,11 @@ $main-gold: #ceb068;
         &:hover {
           background-color: transparent;
           border: 2px solid $main-gold;
+        }
+
+        &:active {
+          background-color: $main-gold;
+          border: 2px solid transparent;
         }
       }
     }
@@ -194,30 +199,6 @@ $main-gold: #ceb068;
       h2 {
         font-size: 2.5rem;
         margin-top: 3rem;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .properties {
-    .main {
-      .mainTitle {
-        h1 {
-          font-size: 5.5rem;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1900px) {
-  .properties {
-    .main {
-      .mainTitle {
-        h1 {
-          font-size: 6rem;
-        }
       }
     }
   }

@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   padding: 2rem 0.5rem;
+  background-color: darken(#272727, 2%);
 
   h2 {
     margin-bottom: 1.5rem;
@@ -23,41 +24,62 @@
     }
   }
 
-  .links,
-  .contactMethods,
+  .blocks {
+    display: flex;
+    align-items: center;
+    place-content: space-between;
+    width: 100%;
+
+    .links,
+    .contactMethods {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      place-content: space-between;
+      text-align: left;
+      color: #eeeeee;
+      margin: 0.5rem 0;
+
+      h4,
+      .method p {
+        opacity: 0.5;
+      }
+
+      h4 {
+        margin: 0;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+
+    .contactMethods {
+      align-items: end;
+
+      .method {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 1rem;
+        }
+
+        p {
+          margin-left: 0.2rem;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
   .socials {
     display: flex;
     align-items: center;
     place-content: space-between;
-    width: 80%;
-    color: #eeeeee;
-    margin: 0.5rem 0;
-
-    h4 {
-      margin: 0;
-      cursor: pointer;
-    }
-  }
-
-  .contactMethods {
-    width: 100%;
-
-    .method {
-      display: flex;
-      align-items: center;
-
-      img {
-        width: 1rem;
-      }
-
-      p {
-        margin-left: 0.2rem;
-        font-size: 0.7rem;
-      }
-    }
-  }
-
-  .socials {
     width: 30%;
     img {
       cursor: pointer;
@@ -74,94 +96,114 @@
   }
 }
 
+@media only screen and (min-width: 400px) {
+  .footer {
+    .blocks {
+      padding: 1rem 3rem;
+
+      .links {
+        h4 {
+          font-size: 1rem;
+        }
+      }
+
+      .contactMethods {
+        .method {
+          img {
+            width: 1.1rem;
+          }
+
+          p {
+            margin-left: 0.4rem;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .footer {
-    .links,
-    .contactMethods,
-    .socials {
+    .blocks {
       width: 60%;
-    }
+      margin: 0 auto;
+      padding: 1rem;
 
-    .contactMethods {
-      width: 70%;
-
-      .method p {
-        font-size: 0.8rem;
+      .links h4,
+      .contactMethods .method {
+        margin: 0.2rem 0;
       }
     }
 
     .socials {
       width: 20%;
-
       img {
-        width: 25%;
+        width: 1.5rem;
       }
     }
   }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
   .footer {
-    .links,
-    .contactMethods,
-    .socials {
-      width: 40%;
+    .blocks {
+      width: 60%;
+      margin: 0 auto;
+      padding: 1rem 2rem;
 
-      h4 {
+      .links h4,
+      .contactMethods .method {
+        margin: 0.3rem 0;
+      }
+
+      .links h4 {
         font-size: 1.2rem;
       }
-    }
 
-    .contactMethods {
-      width: 50%;
-
-      .method p {
-        font-size: 1rem;
-      }
-    }
-
-    .socials {
-      width: 15%;
-
-      img {
-        width: 25%;
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .footer {
-    h2 {
-      font-size: 1.8rem;
-    }
-
-    .links,
-    .contactMethods,
-    .socials {
-      width: 30rem;
-    }
-
-    .contactMethods {
-      width: 50rem;
-
-      .method {
+      .contactMethods .method {
         p {
-          font-size: 1.2rem;
-          margin-left: 1rem;
+          font-size: 1.1rem;
         }
 
         img {
-          width: 2rem;
+          width: 1.5rem;
         }
       }
     }
 
     .socials {
-      width: 10rem;
-
+      width: 8rem;
       img {
-        width: 2.2rem;
+        width: 1.7rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer {
+    .blocks {
+      width: 40rem;
+      padding: 1rem 4rem;
+
+      .links h4,
+      .contactMethods .method {
+        margin: 0.5rem 0;
+      }
+
+      .links h4 {
+        font-size: 1.3rem;
+      }
+
+      .contactMethods .method {
+        p {
+          font-size: 1.2rem;
+        }
+
+        img {
+          width: 1.6rem;
+        }
       }
     }
   }

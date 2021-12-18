@@ -106,7 +106,7 @@ $main-gold: #ceb068;
     .start,
     .goals {
       display: flex;
-      align-items: start;
+      align-items: flex-start;
 
       .text {
         padding-top: 0;
@@ -175,14 +175,6 @@ $main-gold: #ceb068;
 
 @media only screen and (min-width: 1600px) {
   .about {
-    .main {
-      .mainTitle {
-        h1 {
-          font-size: 5.5rem;
-        }
-      }
-    }
-
     .start,
     .goals {
       padding: 2rem 10rem;
@@ -197,19 +189,25 @@ $main-gold: #ceb068;
         width: 30rem;
       }
     }
+
+    .start {
+      .text {
+        padding-right: 0;
+        .imgFiller {
+          background: url("../public/images/villa_pool.webp");
+          background-size: cover;
+          border-radius: 0.2rem;
+          width: 100%;
+          height: 15rem;
+          margin-top: 3.5rem;
+        }
+      }
+    }
   }
 }
 
 @media only screen and (min-width: 1900px) {
   .about {
-    .main {
-      .mainTitle {
-        h1 {
-          font-size: 6rem;
-        }
-      }
-    }
-
     .start,
     .goals {
       padding: 2rem 15rem;

@@ -10,37 +10,37 @@ function Properties() {
 
   const listings = [
     {
-      imgUrl: "/images/villa_pool_2.jpg",
+      imgUrl: "/images/villa_pool_2.webp",
       street: "12345 STREET",
       city: "LOS ANGELES, CA",
     },
     {
-      imgUrl: "/images/villa_pool_2.jpg",
+      imgUrl: "/images/villa_pool_2.webp",
       street: "12345 STREET",
       city: "LOS ANGELES, CA",
     },
     {
-      imgUrl: "/images/villa_pool_2.jpg",
+      imgUrl: "/images/villa_pool_2.webp",
       street: "12345 STREET",
       city: "LOS ANGELES, CA",
     },
     {
-      imgUrl: "/images/villa_pool_2.jpg",
+      imgUrl: "/images/villa_pool_2.webp",
       street: "12345 STREET",
       city: "LOS ANGELES, CA",
     },
     {
-      imgUrl: "/images/villa_pool_2.jpg",
+      imgUrl: "/images/villa_pool_2.webp",
       street: "12345 STREET",
       city: "LOS ANGELES, CA",
     },
     {
-      imgUrl: "/images/villa_pool_2.jpg",
+      imgUrl: "/images/villa_pool_2.webp",
       street: "12345 STREET",
       city: "LOS ANGELES, CA",
     },
     {
-      imgUrl: "/images/villa_pool_2.jpg",
+      imgUrl: "/images/villa_pool_2.webp",
       street: "12345 STREET",
       city: "LOS ANGELES, CA",
     },

@@ -25,7 +25,7 @@ function aboutUs() {
 
       {/* Our Start Section */}
       <div className={styles.start}>
-        <img src="/images/inside_stairs.jpg" alt="Image of stairs" />
+        <img src="/images/inside_stairs.webp" alt="Image of stairs" />
         <div className={styles.text}>
           <h2>OUR START</h2>
           <p>
@@ -33,15 +33,20 @@ function aboutUs() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Dignissim cras tincidunt lobortis feugiat. Adipiscing elit ut
             aliquam purus sit amet luctus venenatis lectus. Non quam lacus
-            suspendisse faucibus interdum posuere lorem ipsum dolor. Adipiscing
-            diam donec adipiscing tristique risus nec. Gravida rutrum quisque
-            non tellus orci. Egestas egestas fringilla phasellus faucibus
-            scelerisque eleifend donec pretium vulputate. Tellus pellentesque eu
-            tincidunt tortor aliquam nulla facilisi. Duis at consectetur lorem
-            donec massa sapien faucibus et. Sollicitudin ac orci phasellus
-            egestas tellus rutrum tellus pellentesque. In pellentesque massa
-            placerat duis ultricies. Cras tincidunt lobortis feugiat vivamus at.
+            suspendisse faucibus interdum posuere lorem ipsum dolor.
+            <br />
+            <br /> Adipiscing diam donec adipiscing tristique risus nec. Gravida
+            rutrum quisque non tellus orci. Egestas egestas fringilla phasellus
+            faucibus scelerisque eleifend donec pretium vulputate. Tellus
+            pellentesque eu tincidunt tortor aliquam nulla facilisi.
+            <br />
+            <br /> Duis at consectetur lorem donec massa sapien faucibus et.
+            Sollicitudin ac orci phasellus egestas tellus rutrum tellus
+            pellentesque. In pellentesque massa placerat duis ultricies. Cras
+            tincidunt lobortis feugiat vivamus at.
           </p>
+
+          <div className={styles.imgFiller}></div>
         </div>
       </div>
 
@@ -59,7 +64,7 @@ function aboutUs() {
             non tellus orci.
           </p>
         </div>
-        <img src="/images/inside_kitchen.jpg" alt="Image of a kitchen" />
+        <img src="/images/inside_kitchen.webp" alt="Image of a kitchen" />
       </div>
     </div>
   );

@@ -5,6 +5,14 @@ $main-gold: #ceb068;
   .main {
     height: 50vh;
 
+    .back {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      width: 2.5rem;
+      cursor: pointer;
+    }
+
     .bg {
       position: absolute;
       top: 0;
@@ -60,12 +68,13 @@ $main-gold: #ceb068;
         align-items: center;
 
         h3 {
-          font-size: 1.7rem;
+          font-size: 1.2rem;
           color: $main-gold;
         }
 
         p {
-          margin-left: 0.5rem;
+          font-size: 0.7rem;
+          margin-left: 0.3rem;
           color: $main-light;
         }
       }
@@ -114,6 +123,26 @@ $main-gold: #ceb068;
   }
 }
 
+@media only screen and (min-width: 400px) {
+  .property {
+    .numbers {
+      .top,
+      .bottom {
+        .number {
+          h3 {
+            font-size: 1.7rem;
+          }
+
+          p {
+            font-size: 1rem;
+            margin-left: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .property {
     .main {
@@ -157,6 +186,12 @@ $main-gold: #ceb068;
 @media only screen and (min-width: 1100px) {
   .property {
     .main {
+      .back {
+        left: 3rem;
+        top: 2rem;
+        width: 3rem;
+      }
+
       .mainTitle {
         h1 {
           font-size: 2.4rem;
@@ -166,7 +201,7 @@ $main-gold: #ceb068;
 
     .about {
       display: flex;
-      align-items: start;
+      align-items: flex-start;
 
       .text {
         padding-top: 0;
@@ -206,6 +241,11 @@ $main-gold: #ceb068;
         h1 {
           font-size: 4rem;
         }
+
+        h3 {
+          text-align: center;
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -238,18 +278,6 @@ $main-gold: #ceb068;
       padding: 2rem 20rem;
     }
 
-    .main {
-      .mainTitle {
-        h1 {
-          font-size: 5.5rem;
-        }
-
-        h3 {
-          font-size: 1.7rem;
-        }
-      }
-    }
-
     .about {
       padding: 2rem 10rem;
 
@@ -268,14 +296,6 @@ $main-gold: #ceb068;
 
 @media only screen and (min-width: 1900px) {
   .property {
-    .main {
-      .mainTitle {
-        h1 {
-          font-size: 6rem;
-        }
-      }
-    }
-
     .about {
       padding: 2rem 15rem;
 
