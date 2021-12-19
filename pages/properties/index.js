@@ -5,46 +5,8 @@ import styles from "../../styles/Properties.module.scss";
 
 import Listing from "../../Components/Listing";
 
-function Properties() {
+function Properties({ listings }) {
   const [email, setEmail] = useState(null);
-
-  const listings = [
-    {
-      imgUrl: "/images/villa_pool_2.webp",
-      street: "12345 STREET",
-      city: "LOS ANGELES, CA",
-    },
-    {
-      imgUrl: "/images/villa_pool_2.webp",
-      street: "12345 STREET",
-      city: "LOS ANGELES, CA",
-    },
-    {
-      imgUrl: "/images/villa_pool_2.webp",
-      street: "12345 STREET",
-      city: "LOS ANGELES, CA",
-    },
-    {
-      imgUrl: "/images/villa_pool_2.webp",
-      street: "12345 STREET",
-      city: "LOS ANGELES, CA",
-    },
-    {
-      imgUrl: "/images/villa_pool_2.webp",
-      street: "12345 STREET",
-      city: "LOS ANGELES, CA",
-    },
-    {
-      imgUrl: "/images/villa_pool_2.webp",
-      street: "12345 STREET",
-      city: "LOS ANGELES, CA",
-    },
-    {
-      imgUrl: "/images/villa_pool_2.webp",
-      street: "12345 STREET",
-      city: "LOS ANGELES, CA",
-    },
-  ];
 
   return (
     <div className={styles.properties}>
@@ -71,9 +33,9 @@ function Properties() {
       <div className={styles.listings}>
         <h2>LISTINGS</h2>
         <div className={styles.grid}>
-          {listings.map((listing, i) => {
+          {listings.map((listing) => {
             return (
-              <Link key={i} href="/properties/1">
+              <Link key={listing.id} href={`/properties/${listing.id}`}>
                 <a>
                   <Listing listing={listing} />
                 </a>
@@ -99,6 +61,17 @@ function Properties() {
       </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch("http://localhost:3000/data/listings.json");
+  const listings = await res.json();
+
+  return {
+    props: {
+      listings,
+    },
+  };
 }
 
 export default Properties;

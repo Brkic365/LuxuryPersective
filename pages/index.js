@@ -56,7 +56,7 @@ export default function Home() {
           <button className={styles.full}>SEE MORE</button>
         </div>
         <img
-          src="/images/outside_circle_pool.webp"
+          src="/images/listings/thumbnails/outside_circle_pool.webp"
           alt="Photo of property with a pool"
         />
       </div>

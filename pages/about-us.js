@@ -25,7 +25,7 @@ function aboutUs() {
 
       {/* Our Start Section */}
       <div className={styles.start}>
-        <img src="/images/inside_stairs.webp" alt="Image of stairs" />
+        <img src="/images/about/inside_stairs.webp" alt="Image of stairs" />
         <div className={styles.text}>
           <h2>OUR START</h2>
           <p>
@@ -64,7 +64,7 @@ function aboutUs() {
             non tellus orci.
           </p>
         </div>
-        <img src="/images/inside_kitchen.webp" alt="Image of a kitchen" />
+        <img src="/images/about/inside_kitchen.webp" alt="Image of a kitchen" />
       </div>
     </div>
   );
