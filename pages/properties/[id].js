@@ -4,7 +4,8 @@ import Head from "next/head";
 import styles from "../../styles/Property.module.scss";
 
 import Contact from "../../Components/Contact";
-import Carousel from "../../Components/Carousel";
+
+import listings from "../../public/data/listings.json";
 
 function Property({ listing }) {
   return (
@@ -100,9 +101,6 @@ function Property({ listing }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch("http://localhost:3000/data/listings.json");
-  const listings = await res.json();
-
   const paths = listings.map((listing) => ({
     params: { id: listing.id.toString() },
   }));
@@ -112,10 +110,6 @@ export async function getStaticPaths() {
 
 // This also gets called at build time
 export async function getStaticProps({ params }) {
-  const res = await fetch("http://localhost:3000/data/listings.json");
-  const listings = await res.json();
-
-  // Pass post data to the page via props
   return {
     props: {
       listing: listings.find((listing) => listing.id == params.id),

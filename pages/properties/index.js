@@ -5,6 +5,8 @@ import styles from "../../styles/Properties.module.scss";
 
 import Listing from "../../Components/Listing";
 
+import listings from "../../public/data/listings.json";
+
 function Properties({ listings }) {
   const [email, setEmail] = useState(null);
 
@@ -64,9 +66,6 @@ function Properties({ listings }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/data/listings.json");
-  const listings = await res.json();
-
   return {
     props: {
       listings,
