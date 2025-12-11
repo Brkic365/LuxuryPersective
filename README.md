@@ -53,7 +53,7 @@ Installation
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/luxury-perspective.git
+git clone https://github.com/Brkic365/luxury-perspective.git
 cd luxury-perspective
 ```
 
