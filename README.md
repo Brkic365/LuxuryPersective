@@ -1,34 +1,123 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+**Luxury Perspective 🏠💎**
 
-## Getting Started
+Luxury Perspective is a premium real estate web application built with Next.js. It features a dark, elegant aesthetic designed to showcase high-end properties with video backgrounds, smooth animations, and a responsive design.
 
-First, run the development server:
+✨ Key Features
+
+Immersive UI: Full-screen video backgrounds and a modern dark theme using SCSS Modules.
+
+Dynamic Property Pages: Individual property pages generated via SSG (Static Site Generation) using getStaticPaths and getStaticProps for optimal performance and SEO.
+
+Property Showcase: Grid view of listings with hover effects and price formatting.
+
+Interactive Elements:
+
+Animated statistics counters (Revenue, Properties Sold, etc.).
+
+Image Carousels powered by Embla Carousel.
+
+Embedded Google Maps for property locations.
+
+Contact System: Fully functional contact form configured for Netlify Forms.
+
+Responsive Navigation: Custom mobile menu and routing.
+
+🛠️ Tech Stack
+
+Framework: Next.js (Pages Router)
+
+Styling: Sass / SCSS
+
+Animations:
+
+react-countup (Number counters)
+
+react-is-visible (Scroll detection)
+
+Carousel: embla-carousel-react
+
+Deployment: Optimized for Netlify (due to native form handling).
+
+🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+Prerequisites
+
+Node.js (v14 or higher)
+
+npm or yarn
+
+Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/luxury-perspective.git
+cd luxury-perspective
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+🗂️ Data Management
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Properties are managed via a JSON file. To add, edit, or remove properties, modify the file located at:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+public/data/listings.json
 
-## Learn More
+Data Structure Example:
 
-To learn more about Next.js, take a look at the following resources:
+```json
+[
+  {
+    "id": 1,
+    "street": "123 Palm Avenue",
+    "city": "Los Angeles, CA",
+    "price": 4500000,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "size": 4200,
+    "imgUrl": "/image_filename.jpg",
+    "googleMaps": "https://www.google.com/maps/embed?..."
+  }
+]
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Note: Ensure images are placed in the public/images/listings/ directory.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+📬 Contact Form
 
-## Deploy on Vercel
+The contact form in Components/Contact.jsx is pre-configured for Netlify Forms using the data-netlify="true" attribute.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+If you deploy this project to Netlify, the form submissions will automatically appear in your Netlify dashboard without any backend code required.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+📂 Project Structure
+```bash
+├── Components/       # Reusable UI components (Navbar, Footer, Carousel, etc.)
+├── pages/            # Application routes
+│   ├── properties/   # Property listing and dynamic details pages
+│   ├── about-us.js   # About page
+│   ├── index.js      # Homepage
+│   ├── _app.js       # Global app wrapper
+│   └── _document.jsx # HTML document structure
+├── public/           # Static assets (images, videos, JSON data)
+├── styles/           # SCSS module files and globals
+└── next.config.js    # Next.js configuration
+```
+📄 License
+
+This project is open source and available under the MIT License.
