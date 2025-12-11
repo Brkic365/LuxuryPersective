@@ -53,8 +53,8 @@ Installation
 Clone the repository:
 
 ```bash
-git clone https://github.com/Brkic365/luxury-perspective.git
-cd luxury-perspective
+git clone https://github.com/Brkic365/LuxuryPersective.git
+cd LuxuryPersective
 ```
 
 Install dependencies:
